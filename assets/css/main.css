@@ -1,0 +1,74 @@
+:root {
+    /* This color is good for text to read */
+    --text-color: #333;
+    --shadow-color: rgb(0 0 0 / 5%);
+}
+
+html {
+    font-size: 100%;
+    /*16px, to set it to 12px -> 62.5%*/
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+p {
+    /* 1rem here = basic fontsize of html which is 16px */
+    font-size: 1rem;
+}
+
+.timer__container{
+    width: 500px;
+    height: 500px;
+    /* background-color: black; */
+}
+
+
+.timer__input{
+    font-size: 3rem;
+}
+
+.timer__svg{
+    left: -10px;
+    z-index: -2;
+}
+
+
+.timer__input:disabled{
+    background-color: transparent;
+}
+
+
+
+
+/*------------FOR RESPONSIVE--------- */
+/* Mobile and Tablet */
+@media (max-width: 991px) {
+   
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+/* PC and low resolution PC */
+@media (min-width: 992px) {
+    
+}
+
+/* Low resolution PC */
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+
+}
+
+/* Tablet and PC */
+@media (min-width: 768px) {
+   
+}

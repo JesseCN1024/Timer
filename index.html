@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template-JS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.css">
+        
+
+        <style>
+            
+        </style>
+    </head>
+    <body >
+        <!-- Timer container -->
+        <div class="timer__container text-center m-auto mt-4 d-flex align-items-center position-relative">
+            <!-- Timer -->
+            <div class="timer__border w-100 d-flex flex-column justify-content-center align-items-center">
+                <!-- Timer -->
+                <input value="30" id="duration" type="text" class="w-50 timer__input text-center border-0 timer__input" placeholder="0"
+                    onchange
+                    onpropertychange
+                    onkeyuponpaste oninput="test()"; 
+                >
+                <div class="timer__btns">
+                    <button id="start-btn" class="timer__bt timer__play bg-transparent border-0 m-3">
+                        <i class="fa-solid fa-play fs-1"></i>
+                    </button>
+                    <button id="pause-btn" class="timer__bt timer__pause bg-transparent border-0 m-3">
+                        <i class="fa-solid fa-pause fs-1"></i>
+                    </button>
+                </div>
+
+                
+            </div>
+
+            <!-- Border -->
+            <svg height="520" width="520" class="timer__svg position-absolute">
+                <!-- The goal is to make a part of the circle dash, the remaining is not dash 
+                                                        stroke-offset: represent the additional spacing to the remaining spacing caused by dasharray
+                                                    -->
+                <circle r="250" cx="-60" cy="260" fill="transparent" stroke="black" stroke-width="10" stroke-dasharray="1571"
+                    stroke-dashoffset="0" transform="rotate(-90, 100,100)"></circle>
+            </svg>
+        </div>
+
+
+        
+        
+        <script>
+            
+
+        </script>
+        
+        
+        <script src="timer.js"></script>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
